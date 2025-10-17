@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
-import { initializeBoard, addRandomTile, moveTiles, canMove, hasWon } from '../utils/gameLogic';
-import { DIRECTIONS, INITIAL_TILES } from '../utils/constants';
+import { initializeBoard, addRandomTile, moveTiles, canMove, hasWon } from '../../utils/gameLogic/gameLogic';
+import { DIRECTIONS, INITIAL_TILES } from '../../utils/constants';
 
 export const useGame = (boardSize = 4) => {
     const [board, setBoard] = useState([]);

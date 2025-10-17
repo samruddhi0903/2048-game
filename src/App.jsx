@@ -1,6 +1,6 @@
-import { useGame } from './hooks/useGame';
-import Board from './components/Board';
-import GameControls from './components/GameControls';
+import { useGame } from './hooks/useGame/useGame';
+import Board from './components/Board/Board';
+import GameControls from './components/GameControls/GameControls';
 import './App.css';
 
 function App() {

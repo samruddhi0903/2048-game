@@ -1,4 +1,4 @@
-import { TILE_4_PROBABILITY, DIRECTIONS } from './constants';
+import { TILE_4_PROBABILITY, DIRECTIONS } from '../constants';
 
 export const initializeBoard = (size = 4) => {
   return Array.from({ length: size }, () =>

@@ -1,42 +1,97 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e0f2fe;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  background-color: #3b82f6;
+  padding: 15px;
+  border-radius: 6px;
+  position: relative;
 }
 
-.card {
-  padding: 2em;
+.board-row {
+  display: contents;
 }
 
-.read-the-docs {
-  color: #888;
+.game-controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.move-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.move-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.move-button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #1d4ed8;
+  color: #f9f6f2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.move-button:hover {
+  background-color: #1e3a8a;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1d4ed8;
+  color: #f9f6f2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.restart-button:hover {
+  background-color: #1e3a8a;
+}
+
+.game-message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #1e40af;
+  font-weight: bold;
 }

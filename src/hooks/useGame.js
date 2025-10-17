@@ -76,5 +76,5 @@ export const useGame = (boardSize = 4) => {
         };
     }, [handleMove]);
 
-    return { board, score, gameOver, gameWon, initGame };
+    return { board, score, gameOver, gameWon, initGame, handleMove };
 };

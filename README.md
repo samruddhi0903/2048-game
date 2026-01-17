@@ -101,3 +101,5 @@ The built files will be in the `dist/` directory, ready for deployment.
 - CSS3
 - HTML5
 
+## Hoated Link
+- https://2048-game-nine-flame.vercel.app/
